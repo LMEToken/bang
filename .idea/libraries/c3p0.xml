@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="c3p0">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib/optional/c3p0" />
+      <root url="file://$PROJECT_DIR$/lib/optional/ehcache" />
+      <root url="file://$PROJECT_DIR$/lib/optional/infinispan" />
+      <root url="file://$PROJECT_DIR$/lib/optional/proxool" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/optional/c3p0" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/optional/ehcache" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/optional/infinispan" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/optional/proxool" recursive="false" />
+  </library>
+</component>
