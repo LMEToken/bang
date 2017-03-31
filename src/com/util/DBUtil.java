@@ -1,7 +1,9 @@
+package com.util;
+
 import org.hibernate.HibernateException;
-import org.hibernate.SessionFactory;
-import org.hibernate.Session;
 import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.metadata.ClassMetadata;
 
@@ -10,7 +12,7 @@ import java.util.Map;
 /**
  * Created by tom on 2017/3/30.
  */
-public class Main {
+public class DBUtil {
 
     private static final SessionFactory ourSessionFactory;
 
@@ -29,7 +31,9 @@ public class Main {
     }
 
     public static void main(final String[] args) throws Exception {
+
         final Session session = getSession();
+
         try {
             System.out.println("querying all the managed entities...");
             final Map metadataMap = session.getSessionFactory().getAllClassMetadata();
