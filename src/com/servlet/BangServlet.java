@@ -31,7 +31,6 @@ public class BangServlet extends HttpServlet {
 
         String userPwd = request.getParameter("password");
 
-
         UserEntity userEntity = new UserEntity();
 
         userEntity.setIphonenum(phonenum);
@@ -44,12 +43,11 @@ public class BangServlet extends HttpServlet {
         }else  if(apiName.equals(ApiAddress.API_REGISTER_USER))
         {
 
-
-            writer.println(UserDBHelp.loginUser(userEntity,request.getSession()));
+            writer.println(UserDBHelp.registerUser(userEntity));
 
         }else   if(apiName.equals(ApiAddress.API_UPDATE_USER))
         {
-            writer.println(UserDBHelp.loginUser(userEntity,request.getSession()));
+            writer.println(UserDBHelp.updateuser(userEntity));
         }
 
 

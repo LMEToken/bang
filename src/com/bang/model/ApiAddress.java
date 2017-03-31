@@ -12,7 +12,7 @@ public class ApiAddress {
     /**
      * register
      */
-    public static String API_REGISTER_USER = "bangbangre_gister_user";
+    public static String API_REGISTER_USER = "bangbang_register_user";
     /**
      * update
      */
